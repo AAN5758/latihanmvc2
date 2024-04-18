@@ -4,12 +4,15 @@ class Mahasiswa extends Controller
 {
     public function index()
     {
-        var_dump("test index mahasiswa");
+
     }
 
     public function detail($id)
     {
-
+        $data['judul'] = 'Detail Mahasiswa';
+        $data['mhs'] = $this->model('Mahasiswa_model')->getMahasiswaById($id);
+        $this->view('templates/header', $data);
+        $this->view('mahasiswa/detail', $data);
         $this->view('templates/footer');
     }
 
