@@ -77,11 +77,11 @@
                     <?= $mhs['nama']; ?>
 
                     <a href="<?= BASEURL; ?>/mahasiswa/hapus/<?= $mhs['id']; ?>" class="badge bg-danger float-end"
-                        onclick="return confirm('Are you sure?')">Delete</a>
+                        onclick="return confirm('Yang Beneeer??')">Hapus</a>
 
                     <a href="<?= BASEURL; ?>/mahasiswa/ubah/<?= $mhs['id']; ?>"
                         class="badge bg-success float-end me-3 ms-3 tampilModeUbah" data-toggle="modal"
-                        data-target="#formModal" data-id="<?= $mhs['id']; ?>">Change</a>
+                        data-target="#formModal" data-id="<?= $mhs['id']; ?>">Ubah</a>
 
                     <a href="<?= BASEURL; ?>/mahasiswa/detail/<?= $mhs['id']; ?>"
                         class="badge bg-primary float-end">Detail</a>

@@ -39,12 +39,13 @@ class Mahasiswa_model
     public function hapusDataMahasiswa($id)
     {
 
-        $query = ("DELETE FROM " . $this->table . 'WHERE id=:id');
+        $query = ("DELETE FROM " . $this->table . ' WHERE id=:id');
 
         $this->db->query($query);
         $this->db->bind('id', $id);
-
         $this->db->execute();
+
+
     }
 
     public function ubahDataMahasiswa($data)
